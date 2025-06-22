@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_weight="6">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translator"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/edtxContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/container_bg"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Text"
+            android:inputType="textMultiLine"
+            android:textColorHint="#454545"
+            android:background="@drawable/edittexbg"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/mainImg"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+<!--        Spinners -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/fromSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinnerbg"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/toSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinnerbg"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+<!--  TextView-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/container_bg"
+            android:layout_weight="1">
+
+
+
+            <TextView
+                android:id="@+id/transl_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is new text"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+
+
+<!--   Buttons -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="horizontal"
+           android:layout_weight="1">
+
+           <Button
+               android:id="@+id/chooseBtn"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="56dp"
+               android:text="Choose Photo"
+               android:layout_weight="1"/>
+
+<!--           <Button-->
+<!--               android:id="@+id/trnslBTN"-->
+<!--               android:layout_width="150dp"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:layout_marginTop="56dp"-->
+<!--               android:text="Translate"-->
+<!--               android:layout_weight="1" />-->
+
+           <Button
+               android:id="@+id/readBtn"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="56dp"
+
+               android:text="Read Text"
+               android:layout_weight="1" />
+
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
