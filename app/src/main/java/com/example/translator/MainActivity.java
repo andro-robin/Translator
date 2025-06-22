@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     Spinner fromSpinner, toSpinner;
     LinearLayout edtxContainer;
 
+    //nothing wll change
+
     //Variables
     InputImage inputImage;
     TextRecognizer recognizer;
