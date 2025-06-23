@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ArrayAdapter toAdapter = new ArrayAdapter(this, R.layout.spinner_item, toLanguage);
-        toAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        fromAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         toSpinner.setAdapter(toAdapter);
 
 
