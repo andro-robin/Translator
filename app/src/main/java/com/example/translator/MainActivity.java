@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
        });
 
         ArrayAdapter fromAdapter = new ArrayAdapter(this, R.layout.spinner_item, fromLanguage);
-        fromAdapter.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
+        fromAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         fromSpinner.setAdapter(fromAdapter);
 
 
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ArrayAdapter toAdapter = new ArrayAdapter(this, R.layout.spinner_item, toLanguage);
-        fromAdapter.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
+        fromAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         toSpinner.setAdapter(toAdapter);
 
 
